@@ -50,7 +50,6 @@ void setup() {
   if (!SD.exists("data.csv")) {
     File dataFile = SD.open("data.csv", FILE_WRITE);
     if (dataFile) {
-      // הכותרות החדשות משקפות איזה חיישן מדד מה
       dataFile.println(F("Time_ms,Temp_SHT40,RH_SHT40,Temp_SCD30,RH_SCD30,CO2_SCD30"));
       dataFile.close();
       Serial.println(F("Header created with dual sensor columns."));
