@@ -11,7 +11,7 @@ library(tidyverse)
 library(ggplot2)
 
 # 1. Load the data --------------------------------------------------------
-raw_data <- read.csv("C:/Users/99hag/Dropbox/Documents/תואר שני/קורסים/שנה א/סמסטר ב/Envirotech/assingments/Mid-semester project/DATA.CSV")
+raw_data <- read.csv("DATA.CSV")
 
 raw_unfiltered <- raw_data %>%
   # Crop to the last continuous run based on the absolute minimum time
